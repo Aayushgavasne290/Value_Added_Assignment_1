@@ -1,210 +1,391 @@
-# Value Added Assignment 1 — Submission Instructions
+# Value Added Assignment 1 — HTML & CSS
 
-Read **all instructions carefully** before starting. Submissions that do not follow the required repository structure or GitHub submission process may not be considered correctly submitted.
+## Important Instructions
 
-## 1. Open the Assignment Repository
-
-Visit the original assignment repository:
-
-**[Value Added Assignment 1](https://github.com/prathmesh-ghatmal/Value_Added_Assignment_1.git)**
-
-This is the original repository. **Do not make your changes directly in this repository.** You must first create your own fork.
-
-![Original assignment repository](assets/repository.png)
-
-## 2. Fork the Repository
-
-1. Open the repository link above.
-2. Click the **Fork** button near the top-right corner of the repository page.
-
-   ![Fork button](assets/repository.png)
-3. On the **Create a new fork** page, keep the repository name exactly as it is. **Do not rename the repository.**
-4. Select your own GitHub account as the owner, if prompted.
-5. Keep **Copy the `main` branch only** selected.
-6. Click **Create fork**.
-
-   ![Create fork form](assets/fork-creation.png)
-
-You should now have your own copy of the assignment repository under your GitHub username. Verify that the page shows that it is forked from the original repository.
+- Complete all three tasks using **HTML and CSS only**.
+- **AI tools are strictly prohibited.** Do not use ChatGPT, GitHub Copilot, Gemini, or any other AI tool to generate, write, modify, debug, or complete your assignment code.
+- You must write the code entirely on your own and be able to explain every part of your implementation.
+- Add meaningful comments in your code explaining the logic and approach you have used. Comments must reflect your actual understanding and must not be vague, irrelevant, or added merely to fulfil the requirement.
+- **Read this entire README carefully before starting.** You are responsible for understanding and following all instructions provided here.
+- You must follow the exact **Fork → Clone → Work → Commit → Push → Pull Request** workflow explained in this README. Do not skip steps or use a different submission method.
+- Follow the exact folder structure and naming conventions specified in this README. Do not rename folders or place your files in incorrect locations.
+- Make meaningful changes, complete your work properly, and commit your changes with meaningful commit messages that accurately describe the work done.
+- Do not push your work directly to the original repository. Push your work to your own fork and submit a Pull Request.
+- Submissions that do not follow the required structure, naming convention, Git workflow, or instructions may not be evaluated.
 
 
-## 3. Clone Your Fork to Your Computer
+**Failure to follow the instructions mentioned in this README may result in your submission being rejected or not considered for evaluation.**
 
-Open your newly created fork on GitHub—not the original repository.
+---
+
+## Step 1: Open the Original Assignment Repository
+
+Visit the original assignment repository using the link below:
 
 
-1. Click the green **Code** button.
-2. Copy the HTTPS clone URL.
-3. Open a terminal (VS Code Terminal, PowerShell, or Git Bash).
-4. Run the following command, replacing `YOUR-GITHUB-USERNAME` with your actual GitHub username:
+**Original Repository:**  
+https://github.com/prathmesh-ghatmal/Value_Added_Assignment_1
+
+
+This repository contains all three tasks and the required reference images.
+
+You must create your own fork of this repository before starting your assignment. Do not make changes directly to the original repository.
+
+---
+
+## Step 2: Fork the Repository
+
+Forking creates your own copy of the original repository under your GitHub account.
+
+1. Open the original repository link provided in Step 1.
+2. Locate the **Fork** button near the top-right side of the repository page.
+3. Click the **Fork** button.
+4. GitHub will open the **Create a new fork** page.
+5. Under **Owner**, select your own GitHub account.
+6. Keep the **Repository name exactly the same as the original repository name**. Do not rename it.
+7. Keep **Copy the main branch only** selected.
+8. Click **Create fork**.
+9. Wait for GitHub to create your fork.
+10. Once created, verify that the repository is present under your GitHub username and that it is marked as forked from the original repository.
+
+**Important:** You must use the fork created through this process. Do not create a new empty repository manually.
+
+---
+
+## Step 3: Clone Your Own Fork to Your Computer
+
+After creating your fork, you must clone that fork to your local computer.
+
+1. Open your fork under your own GitHub username.
+2. Click the green **Code** button.
+3. Make sure the HTTPS option is selected.
+4. Copy the repository URL.
+5. Open Terminal, Command Prompt, or the terminal inside VS Code.
+6. Navigate to the directory where you want to keep your assignment.
+7. Execute the following command, replacing `YOUR-USERNAME` with your GitHub username:
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/Value_Added_Assignment_1.git
+git clone https://github.com/YOUR-USERNAME/Value_Added_Assignment_1.git
 ```
 
-5. Move into the cloned project directory:
+For example, if your GitHub username is `student123`, the command would use your own repository URL.
+
+8. After cloning completes, navigate into the repository:
 
 ```bash
 cd Value_Added_Assignment_1
 ```
 
-**Important:** Clone your fork (the repository under your username). Do not clone the instructor's original repository for your submission work.
+**Verify that you have cloned your own fork and not the original repository.**
 
-## 4. Create Your Required Submission Folder Structure
+---
 
-Inside the repository, open the `Students Submission` folder. Create **one folder named using your full roll number, first name, and last name**.
+## Step 4: Create Your Personal Submission Folder
 
-Use this naming format:
+Inside the cloned repository, locate the folder named:
 
 ```text
-FULLROLLNO_FirstName_LastName
+Students Submission
 ```
 
-Example (use your own details, not the example):
+Inside this folder, you must create a folder using the following exact naming convention:
+
+```text
+FULL_ROLL_NUMBER_FIRSTNAME_LASTNAME
+```
+
+### Example
+
+If your roll number is `2401055` and your name is Prathmesh Ghatmal, your folder name should be:
 
 ```text
 2401055_Prathmesh_Ghatmal
 ```
 
-Inside your personal folder, create a separate folder for each task. Save each task's HTML and CSS files inside its corresponding task folder.
+### Naming rules
 
-Required structure:
+- Use your complete roll number.
+- Use your first name followed by your last name.
+- Use underscores (`_`) to separate the roll number, first name, and last name.
+- Do not use spaces.
+- Do not use nicknames, initials, or incomplete names.
+- Do not create or modify another student's submission folder.
+- Your work must be placed inside your own folder only.
+
+Incorrect folder names or incorrect submission locations may result in your work not being evaluated.
+
+---
+
+## Step 5: Create the Required Folder Structure
+
+Inside your personal submission folder, create three folders named exactly:
+
+- `Task 1`
+- `Task 2`
+- `Task 3`
+
+Each task folder must contain the following two files:
+
+- `index.html` — HTML structure
+- `style.css` — CSS styling
+
+Your folder structure must look like this:
 
 ```text
 Value_Added_Assignment_1/
+│
 └── Students Submission/
-    └── FULLROLLNO_FirstName_LastName/
+    │
+    └── FULL_ROLL_NUMBER_FIRSTNAME_LASTNAME/
+        │
         ├── Task 1/
         │   ├── index.html
         │   └── style.css
+        │
         ├── Task 2/
         │   ├── index.html
         │   └── style.css
+        │
         └── Task 3/
             ├── index.html
             └── style.css
 ```
 
-The repository already contains the assignment folders and reference images. **Do not delete, rename, or modify the assignment's original files.** Add your own submission folder only.
+Replace `FULL_ROLL_NUMBER_FIRSTNAME_LASTNAME` with your own correctly formatted folder name.
 
 
-## 5. Complete All Three Tasks
-
-- Complete **Task 1, Task 2, and Task 3** using **HTML and CSS only**.
-- Recreate the provided UI/reference as accurately as you can.
-- Use appropriate HTML structure and CSS styling.
-- Keep your HTML and CSS organized and readable.
-- Your work must be written and understood by you.
+Do not change the names of the required folders or files.
 
 
-## 6. Strict Rules — Read Carefully
+---
 
-### AI-generated code is strictly prohibited
+## Step 6: Complete All Three Tasks
 
-**Do not use AI tools to generate, write, modify, debug, or complete your HTML or CSS code for this assignment.** The implementation must be your own work.
-
-### Explain your logic using code comments
-
-Add comments in your code explaining the logic behind your structure and styling choices. Comments should demonstrate that you understand what you have written; do not add meaningless or copied comments.
-
-### Additional rules
-
-- Use **HTML and CSS only**. Do not use JavaScript.
-- Do not copy another student's solution.
-- Do not submit someone else's code as your own.
-- Do not modify the original task/reference files.
-- Do not place your solutions outside your own roll-number/name folder.
-- Follow the exact folder and file naming structure specified above.
-- You are responsible for understanding every line of code you submit. Your work may be checked and you may be asked to explain or modify it.
-
-Violation of these rules may affect your assignment evaluation.
+The repository contains reference images for Task 1, Task 2, and Task 3.
 
 
-## 7. Commit and Push Your Work to Your Fork
+You must:
 
-After completing your work, open the terminal inside the repository folder and run:
+1. Open the reference image provided for Task 1.
+2. Recreate the design using HTML and CSS.
+3. Write your HTML structure in `Task 1/index.html`.
+4. Write your CSS styling in `Task 1/style.css`.
+5. Repeat the same process for Task 2 and Task 3 using their respective folders.
+6. Link the CSS file correctly to the HTML file in each task.
+7. Make sure each task can be opened and viewed in a browser.
+
+Your objective is to recreate the given UI as accurately as possible, including layout, spacing, alignment, sizing, colours, typography, and other visible details.
+
+Use only HTML and CSS for this assignment.
+
+Do not use JavaScript, frameworks, CSS libraries, downloaded templates, or prebuilt UI code.
+
+---
+
+## Step 7: Code Quality and Comments
+
+Your code must be written by you and must reflect your own understanding.
+
+### Mandatory requirements
+
+- Write the HTML and CSS yourself.
+- Maintain proper indentation and readable code.
+- Use appropriate HTML elements.
+- Use CSS properties properly to achieve the required layout.
+- Add meaningful comments explaining the approach or logic used in important parts of your code.
+- Comments should explain **why or how you implemented a section**, not simply repeat the element or property name.
+- Avoid unnecessary, meaningless, or repetitive comments.
+- You must be able to explain your complete code during evaluation.
+- You may be asked to modify your code or recreate a part of the UI during evaluation.
+
+### Strictly prohibited
+
+- AI-generated code.
+- Copying code from other students.
+- Copy-pasting complete solutions from the internet.
+- Using prebuilt templates or ready-made UI implementations.
+- Using JavaScript or any framework/library to complete the tasks.
+
+If you cannot explain your submitted code or are unable to make modifications to it yourself, your submission may be considered invalid.
+
+---
+
+## Step 8: Review Your Work Before Committing
+
+Before committing your changes, verify the following:
+
+- All three tasks are completed.
+- Each task has its own `index.html` and `style.css`.
+- All files are inside your own submission folder.
+- Your folder name follows the required naming convention.
+- The HTML and CSS files are linked correctly.
+- Your code is properly formatted and readable.
+- You have added meaningful comments explaining your implementation.
+- You have not included unrelated files or modified other students' submissions.
+- You have personally checked your work in the browser.
 
 
-1. Check the files you changed:
+You can check your modified files using:
 
 ```bash
 git status
 ```
 
-2. Stage your work:
+---
+
+## Step 9: Commit Your Changes Using Meaningful Commit Messages
+
+You must commit your work using Git.
+
+First, check the changes:
+
+```bash
+git status
+```
+
+Stage your assignment files:
 
 ```bash
 git add .
 ```
 
-3. Commit your work with a meaningful commit message:
+Commit your changes using a meaningful commit message:
 
 ```bash
-git commit -m "Completed Value Added Assignment 1"
+git commit -m "Complete HTML CSS assignment tasks"
 ```
 
-4. Push your commit to your GitHub fork:
+### Commit message rules
+
+Commit messages must clearly describe the work performed.
+
+**Examples of meaningful commit messages:**
+
+```text
+Completed Task 1 homepage layout
+Implemented Task 2 responsive styling
+Completed Task 3 UI recreation
+Added HTML structure for Task 1
+Improved spacing and typography in Task 2
+```
+
+**Avoid meaningless commit messages such as:**
+
+```text
+update
+changes
+done
+final
+assignment
+abc
+test
+```
+
+Your commit history should reflect the actual progress and work you have done. Do not make meaningless commits just to increase the number of commits.
+
+If you work on different tasks separately, commit meaningful progress separately where appropriate.
+
+---
+
+## Step 10: Push Your Work to Your Own Fork
+
+After committing your changes, push your work to your own GitHub fork.
+
+Execute:
 
 ```bash
 git push origin main
 ```
 
-This pushes your changes to **your own fork**. It does not submit your assignment to the original repository yet.
+This command pushes your commits to your own fork because `origin` points to the fork you cloned.
 
+**Do not push directly to the original repository.**
 
-## 8. Submit Your Assignment Through a Pull Request
+After pushing, open your fork on GitHub and verify that:
 
-After you have successfully pushed your changes to GitHub:
+- Your personal submission folder is visible inside `Students Submission`.
+- Your Task 1, Task 2, and Task 3 folders are present.
+- Your files have been uploaded correctly.
+- Your commit history reflects your changes.
 
+Pushing to your fork does not complete the submission. You must still create a Pull Request.
 
-1. Open **your fork** on GitHub.
-2. Click the **Pull requests** tab.
+---
+
+## Step 11: Submit Your Assignment Through a Pull Request
+
+After successfully pushing your changes to your fork, you must submit your work to the original repository through a Pull Request.
+
+### Create your Pull Request
+
+1. Open your own fork on GitHub.
+2. On your fork's repository page, click the **Pull requests** tab.
 3. Click **New pull request**.
-4. Check the repository and branch selections carefully. They must be:
+4. GitHub will open the comparison page.
+5. Verify that the base repository and branch are correct.
 
-   - **Base repository:** `prathmesh-ghatmal/Value_Added_Assignment_1`
-   - **Base branch:** `main`
-   - **Head repository:** your fork (`YOUR-GITHUB-USERNAME/Value_Added_Assignment_1`)
-   - **Compare branch:** `main`
+### Verify the following configuration
 
-5. Confirm that your changes are listed in the comparison.
-6. Click **Create pull request**.
-7. Give your PR a clear title in this format:
+| Field | Required value |
+|---|---|
+| Base repository | `prathmesh-ghatmal/Value_Added_Assignment_1` |
+| Base branch | `main` |
+| Head repository | Your own fork |
+| Compare branch | `main` |
 
-   ```text
-   Value Added Assignment 1 Submission – FULLROLLNO FirstName LastName
-   ```
+This means you are submitting changes from your fork's `main` branch to the original repository's `main` branch.
 
-8. In the description, briefly mention that you have completed Tasks 1, 2, and 3.
-9. Submit the Pull Request.
+6. Carefully check the changes displayed on the comparison page.
+7. Make sure your submission contains only your own assignment folder and relevant files.
+8. Click **Create pull request**.
+9. Enter a meaningful Pull Request title using the format below:
 
-![Pull request list and New pull request](assets/pull-request-list.png)
+```text
+Value Added Assignment 1 Submission - FULL ROLL NUMBER - FULL NAME
+```
 
-![Pull request comparison page](assets/pull-request-comparison.png)
+Example:
 
-**Do not merge your Pull Request.** The instructor will review and merge submissions if/when appropriate.
+```text
+Value Added Assignment 1 Submission - 2401055 - Prathmesh Ghatmal
+```
 
+10. Review your Pull Request details.
+11. Click **Create pull request** to submit it.
 
-## 9. Final Submission Checklist
+**Do not merge your own Pull Request.** Submission is complete once your Pull Request has been successfully created.
 
-Before you consider your assignment submitted, verify every item below:
+---
 
-- [ ] I forked the original repository to my own GitHub account.
-- [ ] I cloned **my fork**, not the original repository.
-- [ ] I created my personal folder using my full roll number, first name, and last name.
-- [ ] My Task 1, Task 2, and Task 3 solutions are inside their respective folders.
-- [ ] Each task contains the required HTML and CSS files.
-- [ ] I used HTML and CSS only; I did not use JavaScript.
-- [ ] I did not use AI to generate or modify my solution code.
-- [ ] I added meaningful comments explaining my code logic.
-- [ ] I committed my work and pushed it to my fork.
+## Final Submission Checklist
+
+Before submitting, ensure that you have completed every item below:
+
+- [ ] I have read the entire README and understood all instructions.
+- [ ] I forked the original repository using the prescribed Fork workflow.
+- [ ] I kept the repository name unchanged.
+- [ ] I cloned my own fork, not the original repository.
+- [ ] I created my submission folder inside `Students Submission`.
+- [ ] My folder follows the exact `ROLL_NUMBER_FIRSTNAME_LASTNAME` naming convention.
+- [ ] I created `Task 1`, `Task 2`, and `Task 3` folders.
+- [ ] Each task contains `index.html` and `style.css`.
+- [ ] I completed all three tasks using HTML and CSS only.
+- [ ] I did not use AI tools to generate, write, modify, or debug my code.
+- [ ] I did not copy code from other students.
+- [ ] I added meaningful comments explaining my implementation.
+- [ ] I checked my code and tested all tasks in a browser.
+- [ ] I used meaningful commit messages.
+- [ ] I committed my work and pushed it to my own fork.
 - [ ] I created a Pull Request to the original repository's `main` branch.
-- [ ] My Pull Request is open and has not been merged by me.
+- [ ] I verified that my Pull Request contains only my own submission.
+
+---
+
+# Submission Is Not Complete Until Your Pull Request Is Created
+
+Simply completing the tasks, committing the code, or pushing it to your fork is **not sufficient**.
+
+You must successfully create a Pull Request against the original repository following the exact procedure described in this README.
 
 
-## Submission is Complete Only When
-
-**Your work is pushed to your fork AND a Pull Request has been created against the original repository.** Simply completing the code locally or pushing it to your fork is not a complete submission.
-
-
-If you are unsure about the GitHub process, ask for help **before** submitting incorrectly. Do not skip steps or change the repository/folder naming rules.
+Failure to follow the prescribed workflow, naming convention, folder structure, or assignment rules may result in your submission not being evaluated.
